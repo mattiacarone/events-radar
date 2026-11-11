@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --foreground: #F4F4F4;
+  --panel-bg: #0C0C0C;
+  --panel-border: #242424;
+  --panel-border-subtle: #181818;
+  --mono-muted: #888888;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mechanical CRT / Grid scan subtle background */
+.mechanical-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Crisp mechanical box framing */
+.mechanical-panel {
+  background: #090909;
+  border: 1px solid #222222;
+}
+
+.mechanical-panel-hover:hover {
+  border-color: #555555;
+  background: #0F0F0F;
+}
+
+/* Inverted contrast interactive elements */
+.btn-mechanical {
+  background: #000000;
+  color: #FFFFFF;
+  border: 1px solid #333333;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-mechanical:hover {
+  background: #FFFFFF;
+  color: #000000;
+  border-color: #FFFFFF;
+}
+
+.btn-mechanical-active {
+  background: #FFFFFF;
+  color: #000000;
+  border-color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* Map tiles filter for pure high-contrast black & white tactical scope */
+.leaflet-container {
+  background: #050505 !important;
+}
+
+.tactical-map-tiles {
+  filter: grayscale(100%) invert(100%) contrast(150%) brightness(85%);
+}
+
+/* Hide scrollbar cleanly */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "RADAR - City Events & Culture",
+  "short_name": "Radar",
+  "description": "Real-time city event scouting and squad planning for Amsterdam and beyond",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090D14",
+  "theme_color": "#090D14",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=192&auto=format&fit=crop",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=512&auto=format&fit=crop",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
